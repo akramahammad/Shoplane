@@ -1,0 +1,48 @@
+main {
+    margin: 10% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #f1f3f6;
+}
+
+#tickdiv {
+    width: 250px;
+    height: 250px;
+    background-color: #49d049;
+    border-radius: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    animation: tickanimation 1s;
+}
+
+#tickdiv img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #495057;
+}
+
+@keyframes tickanimation {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25, 1.25);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

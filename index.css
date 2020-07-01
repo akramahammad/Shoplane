@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 16px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #212529;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boldtext {
+    font-weight: 900;
+}
+
+header>div>a,
+nav>div {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav i {
+    margin: 5px;
+    font-size: 18px;
+}
+
+#searchbox {
+    background-color: #f1f3f6;
+    padding: 0px 5px;
+    width: 300px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    background-color: #f1f3f6;
+}
+
+::placeholder {
+    color: #495057;
+}
+
+#searchbox i {
+    color: #495057;
+    transform: translateY(10%);
+}
+
+input {
+    width: 80%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    padding: 10px 10px 10px 8px;
+    color: #212529;
+    outline: none;
+}
+
+#cartdiv {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cartdiv i {
+    color: #fff;
+}
+
+#prodcount {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: -7px;
+    top: -7px;
+    min-width: 17px;
+    background-color: #009688;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0px 4px;
+}
+
+#usericondiv {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+#usericondiv i {
+    color: #fff;
+}
+
+#banner {
+    height: 100vh;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.carouseldiv {
+    width: 90%;
+    z-index: 2;
+}
+
+.carouseldiv img {
+    width: 100%;
+}
+
+#clothing {
+    width: 86%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+#clothingitemwrapper {
+    display: flex;
+    margin-top: 40px;
+}
+
+.clothingitem {
+    width: calc(20% - 8px);
+    border: 1px solid #e9ecef;
+    text-align: center;
+    margin: 3px;
+    background-color: #fff;
+}
+
+.clothingitem>a {
+    display: inline-block;
+    height: 100%;
+}
+
+.clothingitem>a>div {
+    height: 171px;
+    display: flex;
+    padding: 5px 16px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clothingitem:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.clothingitem h3 {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #212529;
+    font-size: 16px;
+}
+
+.clothingitem p {
+    color: #495057;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.clothingitem h4 {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.clothingitem img {
+    width: 100%;
+}
+
+.pricediv {
+    background-color: #212529;
+    padding: 8px 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 7px auto;
+    vertical-align: bottom;
+    width: 90%;
+    color: #fff;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+#accessories {
+    background-color: #f8f9fa;
+    padding: 80px 0px;
+}
+
+#accessoriesdiv {
+    width: 86%;
+    margin: 0px auto;
+}
+
+#accessoriesitemwrapper {
+    display: flex;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #212529;
+}
+
+#footeritemwrapper {
+    width: 86%;
+    margin: 0px auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footeritem {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: #fff;
+}
+
+.footeritem>p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.footeritem a {
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#edyoda {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    width: 100px;
+    z-index: 3;
+}
+
+#edyoda img {
+    width: 100%;
+}
+
+@media(max-width:600px) {
+    #banner {
+        height: auto;
+        padding-top: 150px;
+    }
+    .carouseldiv {
+        width: 100%;
+    }
+    #clothing {
+        padding: 30px 5%;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #clothingitemwrapper {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .clothingitem {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .clothingitem>a>div {
+        height: auto;
+    }
+    #accessories {
+        width: 100%;
+        padding: 30px 5%;
+        box-sizing: border-box;
+    }
+    #accessoriesdiv {
+        width: 100%;
+    }
+    #accessoriesitemwrapper {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #footeritemwrapper {
+        width: 100%;
+        padding: 30px 5%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .footeritem {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        color: #fff;
+    }
+    .footeritem>p {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .footeritem a {
+        color: #fff;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
