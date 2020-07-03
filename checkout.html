@@ -18,24 +18,36 @@
 
 <body>
     <header>
-        <a id="logo" href="./index.html"><span class="boldtext">Shop</span>Lane</a>
-        <div>
-            <a href="./index.html#clothing">Clothing</a>
-            <a href="./index.html#accessories">Accessories</a>
+        <div id="mainheader">
+            <i class="fas fa-bars"></i>
+            <a id="logo" href="./index.html"><span class="boldtext">Shop</span>Lane</a>
+            <div id="menuitems">
+                <a href="./index.html#clothing">Clothing</a>
+                <a href="./index.html#accessories">Accessories</a>
+            </div>
+            <nav>
+                <div class="searchbox">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for Clothing and Accessories" />
+                </div>
+                <div>
+                    <a href="./checkout.html" id="cartdiv">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div id="prodcount"><span></span></div>
+                    </a>
+                    <div id="usericondiv"><i class="fas fa-user"></i></div>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <div id="searchbox">
+        <div id="dropdown">
+            <div class="searchbox">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search for Clothing and Accessories" />
             </div>
-            <div>
-                <a href="./checkout.html" id="cartdiv">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div id="prodcount"><span></span></div>
-                </a>
-                <div id="usericondiv"><i class="fas fa-user"></i></div>
-            </div>
-        </nav>
+            <a href="./index.html#clothing">Clothing</a>
+            <a href="./index.html#accessories">Accessories</a>
+
+        </div>
     </header>
 
     <main>
