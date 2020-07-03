@@ -18,24 +18,36 @@
 
 <body>
     <header>
-        <a id="logo" href="./index.html"><span class="boldtext">Shop</span>Lane</a>
-        <div>
-            <a href="./index.html#clothing">Clothing</a>
-            <a href="./index.html#accessories">Accessories</a>
+        <div id="mainheader">
+            <i class="fas fa-bars"></i>
+            <a id="logo" href="./index.html"><span class="boldtext">Shop</span>Lane</a>
+            <div id="menuitems">
+                <a href="./index.html#clothing">Clothing</a>
+                <a href="./index.html#accessories">Accessories</a>
+            </div>
+            <nav>
+                <div class="searchbox">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for Clothing and Accessories" />
+                </div>
+                <div>
+                    <a href="./checkout.html" id="cartdiv">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div id="prodcount"><span></span></div>
+                    </a>
+                    <div id="usericondiv"><i class="fas fa-user"></i></div>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <div id="searchbox">
+        <div id="dropdown">
+            <div class="searchbox">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search for Clothing and Accessories" />
             </div>
-            <div>
-                <a href="./checkout.html" id="cartdiv">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div id="prodcount"><span></span></div>
-                </a>
-                <div id="usericondiv"><i class="fas fa-user"></i></div>
-            </div>
-        </nav>
+            <a href="./index.html#clothing">Clothing</a>
+            <a href="./index.html#accessories">Accessories</a>
+
+        </div>
     </header>
 
     <div id="edyoda"><img src="https://i.imgur.com/OKAY6Fl.png"></div>
@@ -46,14 +58,15 @@
             </div>
 
             <div id="proddet">
+                <div class="prodimages"></div>
                 <h1 id="prodtitle"></h1>
                 <h2 id="prodbrand"></h2>
                 <h4 class="prodheadings">Price</h4>
                 <span id="prodprice"></span>
                 <h4 class="prodheadings">Description</h4>
                 <p id="desc"></p>
-                <h4 class="prodheadings">Product Preview</h4>
-                <div id="prodimages">
+                <h3 class="prodheadings">Product Preview</h3>
+                <div class="prodimages">
                 </div>
                 <div id="addbtn"><i class="fas fa-shopping-cart"></i>Add to Cart</div>
             </div>
