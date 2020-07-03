@@ -14,6 +14,20 @@ $(document).ready(function() {
         }
         prodcount.text(tot);
     }
+    var disp = false;
+    $(".fa-bars").click(function() {
+        if (disp == false) {
+            $(this).removeClass("fa-bars");
+            $(this).addClass("fa-times");
+            $("#dropdown").css({ display: "block" });
+            disp = true;
+        } else {
+            $(this).removeClass("fa-times");
+            $(this).addClass("fa-bars");
+            $("#dropdown").css({ display: "none" });
+            disp = false;
+        }
+    })
     $.get(url, function(resp) {
         console.log(resp);
 
