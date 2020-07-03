@@ -84,3 +84,39 @@ h1 {
     margin-bottom: 10px;
     color: white;
 }
+
+@media(max-width:600px) {
+    #checkoutdiv {
+        flex-wrap: wrap;
+    }
+    #checkright {
+        width: 100%;
+    }
+    #cartitemwrapper {
+        width: 100%;
+    }
+    #totpricediv {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .cartitem img {
+        width: 25%;
+    }
+    .cartcontent {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cartcontent h4 {
+        margin: 10px 0 5px 0;
+        font-size: 18px;
+    }
+    .cartcontent p {
+        margin-top: 5px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .cartcontent p:last-child {
+        margin: 0;
+    }
+}
