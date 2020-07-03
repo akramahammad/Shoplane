@@ -20,7 +20,20 @@ $(document).ready(function() {
         $("#totitems").text(prods.length);
         prodcount.text(tot);
     }
-
+    var disp = false;
+    $(".fa-bars").click(function() {
+        if (disp == false) {
+            $(this).removeClass("fa-bars");
+            $(this).addClass("fa-times");
+            $("#dropdown").css({ display: "block" });
+            disp = true;
+        } else {
+            $(this).removeClass("fa-times");
+            $(this).addClass("fa-bars");
+            $("#dropdown").css({ display: "none" });
+            disp = false;
+        }
+    })
 
     for (var i = 0; i < prods.length; i++) {
         cartdiv.append(createcartcard(prods[i].preview, prods[i].name, prods[i].count, prods[i].price));
@@ -50,11 +63,5 @@ $(document).ready(function() {
         cartitem.append(cartimg, itemcont);
         return cartitem;
     }
-
-
-
-
-
-
 
 })
