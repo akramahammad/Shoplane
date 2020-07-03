@@ -16,6 +16,20 @@ $(document).ready(function() {
         }
         prodcount.text(tot);
     }
+    var disp = false;
+    $(".fa-bars").click(function() {
+        if (disp == false) {
+            $(this).removeClass("fa-bars");
+            $(this).addClass("fa-times");
+            $("#dropdown").css({ display: "block" });
+            disp = true;
+        } else {
+            $(this).removeClass("fa-times");
+            $(this).addClass("fa-bars");
+            $("#dropdown").css({ display: "none" });
+            disp = false;
+        }
+    })
 
     const detailscall = new Promise(function(resolve, reject) {
         $.get(prodlink, function(resp) {
@@ -36,11 +50,11 @@ $(document).ready(function() {
 
             for (var i = 0; i < previmages.length; i++) {
                 var newprev = createprevimage(previmages[i]);
-                $("#prodimages").append(newprev);
+                $(".prodimages").append(newprev);
             }
-            $("#prodimages>img").first().addClass("active");
-            $("#prodimages>img").click(function() {
-                $("#prodimages>img").removeClass("active");
+            $(".prodimages>img:first-child").addClass("active");
+            $(".prodimages>img").click(function() {
+                $(".prodimages>img").removeClass("active");
                 $(this).addClass("active");
                 mainimage.attr("src", $(this).attr("src"));
             })
@@ -67,7 +81,6 @@ $(document).ready(function() {
                     }
                 }
                 if (present) {
-                    console.log(arr[pos].count);
                     var newcount = arr[pos].count + 1;
                     passdata.count = newcount;
                     arr.splice(pos, 1);
