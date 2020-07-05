@@ -39,6 +39,7 @@ h1 {
 
 .cartcontent {
     margin-left: 20px;
+    width: 100%;
 }
 
 .cartcontent h4 {
@@ -47,14 +48,49 @@ h1 {
 }
 
 .cartcontent p {
-    margin-top: 10px;
-    margin-bottom: 30px;
     color: #495057;
     font-weight: 600;
 }
 
-.cartcontent p:last-child {
+.itemprice {
     margin: 0;
+}
+
+.amtdeldiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qtychngediv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qtychngediv>div {
+    background-color: #dcdcdc;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.fa-trash {
+    cursor: pointer;
+    color: #000;
+}
+
+.fa-trash:hover {
+    color: #ff0000;
+}
+
+.fa-plus {
+    color: #009688;
+}
+
+.fa-minus {
+    color: #DC143C;
 }
 
 #totpricediv {
@@ -110,13 +146,5 @@ h1 {
     .cartcontent h4 {
         margin: 10px 0 5px 0;
         font-size: 18px;
-    }
-    .cartcontent p {
-        margin-top: 5px;
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
-    .cartcontent p:last-child {
-        margin: 0;
     }
 }
