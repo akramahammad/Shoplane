@@ -21,12 +21,12 @@ $(document).ready(function() {
         if (disp == false) {
             $(this).removeClass("fa-bars");
             $(this).addClass("fa-times");
-            $("#dropdown").css({ display: "block" });
+            $("#dropdown").css({ height: "165px", padding: "10px 0" });
             disp = true;
         } else {
             $(this).removeClass("fa-times");
             $(this).addClass("fa-bars");
-            $("#dropdown").css({ display: "none" });
+            $("#dropdown").css({ height: "0", padding: "0" });
             disp = false;
         }
     })
