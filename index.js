@@ -19,12 +19,12 @@ $(document).ready(function() {
         if (disp == false) {
             $(this).removeClass("fa-bars");
             $(this).addClass("fa-times");
-            $("#dropdown").css({ display: "block" });
+            $("#dropdown").css({ height: "165px", padding: "10px 0" });
             disp = true;
         } else {
             $(this).removeClass("fa-times");
             $(this).addClass("fa-bars");
-            $("#dropdown").css({ display: "none" });
+            $("#dropdown").css({ height: "0", padding: "0" });
             disp = false;
         }
     })
@@ -34,7 +34,6 @@ $(document).ready(function() {
         for (var i = 0; i < resp.length; i++) {
             var createdcard = createcard(resp[i].id, resp[i].preview, resp[i].name, resp[i].brand, resp[i].price);
             var clothgird = $("#clothingitemwrapper");
-            console.log(createdcard);
             var accessgird = $("#accessoriesitemwrapper");
             if (resp[i].isAccessory == false) {
                 clothgird.append(createdcard);
