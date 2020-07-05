@@ -138,9 +138,11 @@ input {
 #dropdown {
     width: 100%;
     text-align: center;
-    padding: 15px 0 10px 0;
     position: relative;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 500ms;
 }
 
 #dropdown a {
@@ -335,6 +337,7 @@ footer {
         display: block;
         width: 100%;
         box-sizing: border-box;
+        margin-top: 10px;
         margin-bottom: 15px;
     }
     nav>div:last-child {
